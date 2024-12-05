@@ -1,33 +1,10 @@
 // src/components/About/About.js
 import React, { useEffect, useRef } from "react";
-import styled from "styled-components";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { AboutSection } from "./AboutStyles";
 
 gsap.registerPlugin(ScrollTrigger);
-
-const AboutSection = styled.section`
-  min-height: 100vh;
-  padding: 150px 50px 50px 50px;
-  background-color: #121212;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  .content {
-    max-width: 800px;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(50px);
-  }
-
-  .image {
-    width: 300px;
-    margin-top: 30px;
-    opacity: 0;
-    transform: scale(0.8);
-  }
-`;
 
 const About = () => {
   const aboutRef = useRef(null);

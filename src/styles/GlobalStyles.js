@@ -10,6 +10,13 @@ const GlobalStyles = createGlobalStyle`
   }
 
   /* Estilos globales */
+  @font-face {
+    font-family: 'OlivieSans-Regular';
+    src: url('/assets/fonts/OlivieSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   body {
     background-color: #121212;
     color: #fff;
